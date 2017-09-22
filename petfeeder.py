@@ -36,7 +36,7 @@ EARG = 2
 # ******************************************************************************
 def main():
     '''
-    Main for pet feeder.
+    Main for cat feeder.
     '''
 
     if (len(sys.argv) <= 1):
@@ -67,7 +67,7 @@ def main():
     if (args.log is not None):
         LOG.addHandler(personal.util.log_file_handler(args.log))
 
-    # Run pet feeder
+    # Run cat feeder
     return run(servo)
 
 # ******************************************************************************
@@ -82,7 +82,7 @@ def usage():
 # ******************************************************************************
 def run(servo):
     '''
-    Run pet feeder.
+    Run cat feeder.
     '''
 
     LOG.info('Dispensing food.')
@@ -105,7 +105,7 @@ def get_usage():
     string += "        Pin that servo motor is connected to.\n"
     string += "\n"
     string += "    -d, --dur <time>\n"
-    string += "        Amount of time (sec) to run servo motor, in order to feed pet.\n"
+    string += "        Amount of time (sec) to run servo motor, in order to feed cat.\n"
     string += "\n"
     string += "    -l, --log <logfile>\n"
     string += "        File to log contents to.\n"
